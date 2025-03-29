@@ -1,0 +1,95 @@
+2025-03-29 17:38:17.223 | ERROR    | __main__:main:79 - 프로그램 실행 중 오류 발생: Executable doesn't exist at /Users/kimdoyeop/Library/Caches/ms-playwright/chromium-1097/chrome-mac/Chromium.app/Contents/MacOS/Chromium
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-03-29 18:34:08.727 | ERROR    | __main__:main:79 - 프로그램 실행 중 오류 발생: 1 validation error for ChatOpenAI
+__root__
+  Client.__init__() got an unexpected keyword argument 'proxies' (type=type_error)
+2025-03-29 18:34:47.996 | ERROR    | __main__:main:79 - 프로그램 실행 중 오류 발생: 1 validation error for ChatOpenAI
+__root__
+  Client.__init__() got an unexpected keyword argument 'proxies' (type=type_error)
+2025-03-29 18:40:53.645 | INFO     | crawler:login:34 - 네이버 로그인 성공
+2025-03-29 18:40:53.648 | INFO     | __main__:main:37 - 키워드 '파이썬' 검색 시작
+2025-03-29 18:40:54.743 | INFO     | crawler:search_questions:81 - 키워드 '파이썬'로 0개의 질문 검색 완료
+2025-03-29 18:40:54.743 | INFO     | __main__:main:37 - 키워드 '프로그래밍' 검색 시작
+2025-03-29 18:40:55.947 | INFO     | crawler:search_questions:81 - 키워드 '프로그래밍'로 0개의 질문 검색 완료
+2025-03-29 18:40:55.948 | INFO     | __main__:main:37 - 키워드 '코딩' 검색 시작
+2025-03-29 18:40:57.115 | INFO     | crawler:search_questions:81 - 키워드 '코딩'로 0개의 질문 검색 완료
+2025-03-29 18:40:57.116 | INFO     | __main__:main:37 - 키워드 '개발' 검색 시작
+2025-03-29 18:40:58.296 | INFO     | crawler:search_questions:81 - 키워드 '개발'로 0개의 질문 검색 완료
+2025-03-29 18:46:18.396 | INFO     | crawler:login:34 - 네이버 로그인 성공
+2025-03-29 18:46:18.398 | INFO     | __main__:main:37 - 키워드 '파이썬' 검색 시작
+2025-03-29 18:46:19.039 | INFO     | crawler:search_questions:81 - 키워드 '파이썬'로 0개의 질문 검색 완료
+2025-03-29 18:46:19.039 | INFO     | __main__:main:37 - 키워드 '프로그래밍' 검색 시작
+2025-03-29 18:46:19.687 | INFO     | crawler:search_questions:81 - 키워드 '프로그래밍'로 0개의 질문 검색 완료
+2025-03-29 18:46:19.687 | INFO     | __main__:main:37 - 키워드 '코딩' 검색 시작
+2025-03-29 18:46:20.322 | INFO     | crawler:search_questions:81 - 키워드 '코딩'로 0개의 질문 검색 완료
+2025-03-29 18:46:20.322 | INFO     | __main__:main:37 - 키워드 '개발' 검색 시작
+2025-03-29 18:46:20.952 | INFO     | crawler:search_questions:81 - 키워드 '개발'로 0개의 질문 검색 완료
+2025-03-29 18:49:32.856 | INFO     | crawler:login:30 - 로그인 페이지로 이동했습니다. 직접 로그인해주세요.
+2025-03-29 18:49:32.859 | INFO     | crawler:login:33 - 로그인을 완료한 후 터미널에서 Enter 키를 눌러주세요...
+2025-03-29 18:50:11.377 | INFO     | crawler:login:30 - 로그인 페이지로 이동했습니다. 직접 로그인해주세요.
+2025-03-29 18:50:11.377 | INFO     | crawler:login:33 - 로그인을 완료한 후 터미널에서 Enter 키를 눌러주세요...
+2025-03-29 18:50:26.277 | INFO     | crawler:login:38 - 로그인 프로세스 완료
+2025-03-29 18:50:26.277 | INFO     | __main__:main:37 - 키워드 '파이썬' 검색 시작
+2025-03-29 18:50:27.284 | INFO     | crawler:search_questions:85 - 키워드 '파이썬'로 0개의 질문 검색 완료
+2025-03-29 18:50:27.284 | INFO     | __main__:main:37 - 키워드 '프로그래밍' 검색 시작
+2025-03-29 18:50:28.202 | INFO     | crawler:search_questions:85 - 키워드 '프로그래밍'로 0개의 질문 검색 완료
+2025-03-29 18:50:28.202 | INFO     | __main__:main:37 - 키워드 '코딩' 검색 시작
+2025-03-29 18:50:29.211 | INFO     | crawler:search_questions:85 - 키워드 '코딩'로 0개의 질문 검색 완료
+2025-03-29 18:50:29.211 | INFO     | __main__:main:37 - 키워드 '개발' 검색 시작
+2025-03-29 18:50:30.143 | INFO     | crawler:search_questions:85 - 키워드 '개발'로 0개의 질문 검색 완료
+2025-03-29 18:50:44.818 | INFO     | crawler:login:30 - 로그인 페이지로 이동했습니다. 직접 로그인해주세요.
+2025-03-29 18:50:44.818 | INFO     | crawler:login:33 - 로그인을 완료한 후 터미널에서 Enter 키를 눌러주세요...
+2025-03-29 18:50:54.082 | INFO     | crawler:login:38 - 로그인 프로세스 완료
+2025-03-29 18:50:54.082 | INFO     | __main__:main:37 - 키워드 '파이썬' 검색 시작
+2025-03-29 18:50:55.326 | INFO     | crawler:search_questions:85 - 키워드 '파이썬'로 0개의 질문 검색 완료
+2025-03-29 18:50:55.326 | INFO     | __main__:main:37 - 키워드 '프로그래밍' 검색 시작
+2025-03-29 18:50:56.564 | INFO     | crawler:search_questions:85 - 키워드 '프로그래밍'로 0개의 질문 검색 완료
+2025-03-29 18:50:56.564 | INFO     | __main__:main:37 - 키워드 '코딩' 검색 시작
+2025-03-29 18:50:57.813 | INFO     | crawler:search_questions:85 - 키워드 '코딩'로 0개의 질문 검색 완료
+2025-03-29 18:50:57.814 | INFO     | __main__:main:37 - 키워드 '개발' 검색 시작
+2025-03-29 18:50:59.062 | INFO     | crawler:search_questions:85 - 키워드 '개발'로 0개의 질문 검색 완료
+2025-03-29 18:55:30.098 | INFO     | crawler:login:29 - 로그인 페이지로 이동했습니다. 직접 로그인해주세요.
+2025-03-29 18:55:30.098 | INFO     | crawler:login:32 - 로그인을 완료한 후 터미널에서 Enter 키를 눌러주세요...
+2025-03-29 18:55:46.740 | INFO     | crawler:login:37 - 로그인 프로세스 완료
+2025-03-29 18:55:46.740 | INFO     | crawler:login:40 - 네이버 지식인 메인 페이지로 이동합니다...
+2025-03-29 18:55:47.777 | INFO     | crawler:login:43 - 네이버 지식인 메인 페이지로 이동 완료
+2025-03-29 18:55:47.777 | INFO     | __main__:main:32 - 네이버 지식인 로그인 완료. 화면을 확인하세요.
+2025-03-29 18:56:17.129 | INFO     | crawler:login:29 - 로그인 페이지로 이동했습니다. 직접 로그인해주세요.
+2025-03-29 18:56:17.129 | INFO     | crawler:login:32 - 로그인을 완료한 후 터미널에서 Enter 키를 눌러주세요...
+2025-03-29 18:56:29.273 | INFO     | crawler:login:37 - 로그인 프로세스 완료
+2025-03-29 18:56:29.274 | INFO     | crawler:login:40 - 네이버 지식인 메인 페이지로 이동합니다...
+2025-03-29 18:56:30.982 | INFO     | crawler:login:43 - 네이버 지식인 메인 페이지로 이동 완료
+2025-03-29 18:56:30.983 | INFO     | __main__:main:32 - 네이버 지식인 로그인 완료. 화면을 확인하세요.
+2025-03-29 18:57:21.259 | INFO     | crawler:login:29 - 로그인 페이지로 이동했습니다. 직접 로그인해주세요.
+2025-03-29 18:57:21.260 | INFO     | crawler:login:32 - 로그인을 완료한 후 터미널에서 Enter 키를 눌러주세요...
+2025-03-29 18:57:33.996 | INFO     | crawler:login:37 - 로그인 프로세스 완료
+2025-03-29 18:57:33.997 | INFO     | crawler:login:40 - 네이버 지식인 메인 페이지로 이동합니다...
+2025-03-29 18:57:35.015 | INFO     | crawler:login:43 - 네이버 지식인 메인 페이지로 이동 완료
+2025-03-29 18:57:35.015 | INFO     | __main__:main:32 - 네이버 지식인 로그인 완료. 화면을 확인하세요.
+2025-03-29 18:57:35.016 | INFO     | __main__:main:35 - 브라우저 창을 유지합니다. 종료하려면 터미널에서 엔터 키를 누르세요...
+2025-03-29 19:58:08.851 | INFO     | crawler:login:29 - 로그인 페이지로 이동했습니다. 직접 로그인해주세요.
+2025-03-29 19:58:08.851 | INFO     | crawler:login:32 - 로그인을 완료한 후 터미널에서 Enter 키를 눌러주세요...
+2025-03-29 19:58:23.202 | INFO     | crawler:login:37 - 로그인 프로세스 완료
+2025-03-29 19:58:23.202 | INFO     | crawler:login:40 - 네이버 지식인 메인 페이지로 이동합니다...
+2025-03-29 19:58:24.364 | INFO     | crawler:login:43 - 네이버 지식인 메인 페이지로 이동 완료
+2025-03-29 19:58:24.365 | INFO     | __main__:main:32 - 네이버 지식인 로그인 완료. 화면을 확인하세요.
+2025-03-29 19:58:24.365 | INFO     | __main__:main:35 - 브라우저 창을 유지합니다. 종료하려면 터미널에서 엔터 키를 누르세요...
+2025-03-29 20:04:15.182 | INFO     | crawler:login:30 - 로그인 페이지로 이동했습니다. 직접 로그인해주세요.
+2025-03-29 20:04:15.183 | INFO     | crawler:login:33 - 로그인을 완료한 후 터미널에서 Enter 키를 눌러주세요...
+2025-03-29 20:04:26.858 | INFO     | crawler:login:38 - 로그인 프로세스 완료
+2025-03-29 20:04:26.859 | INFO     | crawler:login:41 - 네이버 지식인 메인 페이지로 이동합니다...
+2025-03-29 20:04:28.106 | INFO     | crawler:login:44 - 네이버 지식인 메인 페이지로 이동 완료
+2025-03-29 20:04:28.106 | INFO     | __main__:main:32 - 네이버 지식인 로그인 완료. 화면을 확인하세요.
+2025-03-29 20:04:38.181 | INFO     | __main__:main:36 - 입력한 검색어: 수학
+2025-03-29 20:04:38.182 | INFO     | crawler:search_keyword:65 - 키워드 검색을 시작합니다: 수학
+2025-03-29 20:04:39.098 | INFO     | crawler:search_keyword:88 - 검색 버튼을 클릭합니다...
+2025-03-29 20:04:39.988 | INFO     | crawler:search_keyword:93 - '수학' 검색 완료
+2025-03-29 20:04:39.988 | INFO     | __main__:main:42 - 검색이 완료되었습니다. 검색 결과 화면을 확인하세요.
+2025-03-29 20:04:39.988 | INFO     | __main__:main:47 - 브라우저 창을 유지합니다. 종료하려면 터미널에서 엔터 키를 누르세요...

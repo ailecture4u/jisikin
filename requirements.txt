@@ -1,0 +1,7 @@
+playwright==1.41.2
+openai==0.28.1
+python-dotenv==1.0.1
+aiohttp==3.9.3
+pydantic==1.10.13
+pydantic-settings==2.1.0
+loguru==0.7.2
