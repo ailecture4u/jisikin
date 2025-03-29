@@ -40,6 +40,17 @@ async def main():
         
         if search_result:
             logger.info("검색이 완료되었습니다. 검색 결과 화면을 확인하세요.")
+            
+            # 답변할 내용 입력 받는 부분 제거하고 자동 처리
+            logger.info("AI가 질문 내용을 분석하여 자동으로 답변을 생성합니다...")
+            
+            # 빈 문자열 전달 - 크롤러 내부에서 ChatGPT 답변 생성 사용
+            answer_result = await crawler.answer_questions("")
+            
+            if answer_result:
+                logger.info("모든 질문 답변이 완료되었습니다.")
+            else:
+                logger.error("답변 과정에서 문제가 발생했습니다.")
         else:
             logger.error("검색 과정에서 문제가 발생했습니다.")
         
