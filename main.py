@@ -3,6 +3,7 @@ from loguru import logger
 import sys
 from config import settings
 from crawler import NaverKinCrawler
+from answer_generator import AnswerGenerator
 
 # 로깅 설정
 logger.remove()
@@ -25,38 +26,54 @@ async def main():
         crawler = NaverKinCrawler()
         await crawler.init_browser()
         
+        # 답변 생성기 초기화
+        answer_generator = AnswerGenerator()
+        
         # 로그인
         await crawler.login()
         
-        # 로그인 후 네이버 지식인 페이지에서 작업을 수행할 수 있습니다.
-        logger.info("네이버 지식인 로그인 완료. 화면을 확인하세요.")
-        
-        # 사용자로부터 검색어 입력 받기
-        search_keyword = input("검색어를 입력하세요: ")
-        logger.info(f"입력한 검색어: {search_keyword}")
-        
-        # 검색 수행
-        search_result = await crawler.search_keyword(search_keyword)
-        
-        if search_result:
-            logger.info("검색이 완료되었습니다. 검색 결과 화면을 확인하세요.")
+        # 각 키워드별로 질문 검색 및 답변
+        for keyword in settings.SEARCH_KEYWORDS:
+            logger.info(f"키워드 '{keyword}' 검색 시작")
             
-            # 답변할 내용 입력 받는 부분 제거하고 자동 처리
-            logger.info("AI가 질문 내용을 분석하여 자동으로 답변을 생성합니다...")
+            # 질문 검색
+            questions = await crawler.search_questions(keyword)
             
-            # 빈 문자열 전달 - 크롤러 내부에서 ChatGPT 답변 생성 사용
-            answer_result = await crawler.answer_questions("")
-            
-            if answer_result:
-                logger.info("모든 질문 답변이 완료되었습니다.")
-            else:
-                logger.error("답변 과정에서 문제가 발생했습니다.")
-        else:
-            logger.error("검색 과정에서 문제가 발생했습니다.")
-        
-        # 프로그램 종료 전 대기
-        logger.info("브라우저 창을 유지합니다. 종료하려면 터미널에서 엔터 키를 누르세요...")
-        input("프로그램을 종료하려면 엔터 키를 누르세요...")
+            for question in questions:
+                try:
+                    # 질문 상세 내용 가져오기
+                    question_detail = await crawler.get_question_detail(question["url"])
+                    if not question_detail:
+                        continue
+                        
+                    logger.info(f"질문 처리 중: {question_detail['title']}")
+                    
+                    # 답변 생성
+                    answer = await answer_generator.generate_answer(
+                        question_detail["title"],
+                        question_detail["content"]
+                    )
+                    
+                    # 답변 포맷팅
+                    formatted_answer = answer_generator.format_answer(answer)
+                    
+                    # 답변 게시
+                    success = await crawler.post_answer(
+                        question["url"],
+                        formatted_answer
+                    )
+                    
+                    if success:
+                        logger.info(f"답변 게시 완료: {question_detail['title']}")
+                    else:
+                        logger.error(f"답변 게시 실패: {question_detail['title']}")
+                        
+                    # 딜레이 추가
+                    await asyncio.sleep(settings.CRAWLING_DELAY)
+                    
+                except Exception as e:
+                    logger.error(f"질문 처리 중 오류 발생: {str(e)}")
+                    continue
                     
     except Exception as e:
         logger.error(f"프로그램 실행 중 오류 발생: {str(e)}")
@@ -65,4 +82,4 @@ async def main():
         await crawler.close()
 
 if __name__ == "__main__":
-    asyncio.run(main()) 
+    asyncio.run(main())
